@@ -1,0 +1,80 @@
+{
+  "title": "帝王之术",
+  "project_name": "Gospel_Emperor_Wisdom",
+  "resolution": "1080",
+  "speaker": "zh_male_huoli",
+  "bgm_query": "悬疑 搞笑 反转",
+  "role_speakers": {
+    "年轻人": "BV056_streaming",
+    "大师": "BV701_streaming",
+    "旁白": "zh_male_voplvyou"
+  },
+  "messages": [
+    {
+      "role": "年轻人",
+      "type": "text",
+      "text": "大师，最近生意很不好，有什么方法可以改变吗？",
+      "emotion": "sad"
+    },
+    {
+      "role": "大师",
+      "type": "text",
+      "text": "问你一个问题",
+      "emotion": "neutral"
+    },
+    {
+      "role": "大师",
+      "type": "text",
+      "text": "现在有两只鬼要吃掉你",
+      "emotion": "neutral"
+    },
+    {
+      "role": "大师",
+      "type": "text",
+      "text": "一只红鬼，一只绿鬼",
+      "emotion": "neutral"
+    },
+    {
+      "role": "大师",
+      "type": "text",
+      "text": "红鬼一箭就可以射死，绿鬼需要两箭",
+      "emotion": "neutral"
+    },
+    {
+      "role": "大师",
+      "type": "text",
+      "text": "现在你手上有两只箭",
+      "emotion": "neutral"
+    },
+    {
+      "role": "大师",
+      "type": "text",
+      "text": "你该怎么办？",
+      "emotion": "surprise"
+    },
+    {
+      "role": "旁白",
+      "type": "text",
+      "text": "一分钟后……",
+      "emotion": "neutral"
+    },
+    {
+      "role": "年轻人",
+      "type": "text",
+      "text": "先射绿鬼一箭，谁不听话最后那一箭射谁！",
+      "emotion": "happy"
+    },
+    {
+      "role": "大师",
+      "type": "text",
+      "text": "本想教你平庸之道，却不曾想你却悟出了帝王之术",
+      "emotion": "surprise"
+    },
+    {
+      "role": "大师",
+      "type": "text",
+      "text": "贫道佩服！",
+      "emotion": "happy"
+    }
+  ]
+}

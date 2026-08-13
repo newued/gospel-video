@@ -1,0 +1,22 @@
+# 运行时/本地产物
+__pycache__/
+*.pyc
+.workbuddy/
+
+# 运行时输出目录（重新生成即可）
+works/
+assets/chat_video/
+assets/tts/
+assets/custom_audio/
+assets/library/
+scripts/assets/cache/
+
+# 中间 plan（主 agent 决策产物，不入库）
+assets/plan_*.json
+assets/_tmp_script_*.json
+
+# 编辑器/系统
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

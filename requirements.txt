@@ -1,0 +1,11 @@
+# AB 双人对话模式核心依赖（scripts/ab_generator.py）
+faster-whisper>=1.0.0        # ASR 音画对齐（首次运行自动下载 small 模型，约 460MB）
+imageio>=2.31.0              # 媒体素材宽高/时长解析
+Pillow>=10.0.0               # 贴图/头像图像处理
+
+# 可选：webm 聊天视频预览（chat_scene_renderer.py）
+# playwright>=1.40.0
+# （安装后还需执行: playwright install chromium）
+
+# 可选：完整流水线（gospel_automator.py）需搭配 jianying-editor skill，
+# 并设置环境变量 JY_SKILL_ROOT 指向其根目录（提供 TTS / 云素材库 / 原生贴纸）。
