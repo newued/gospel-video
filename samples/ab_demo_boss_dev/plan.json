@@ -1,0 +1,752 @@
+{
+  "meta": {
+    "title": "AB双人对话短视频",
+    "resolution": [
+      1080,
+      1920
+    ],
+    "fps": 30,
+    "aspect_ratio": "9:16",
+    "bg_color": "#000000",
+    "chat_bg_color": "#f5f5f5",
+    "output": "output/final_video.mp4",
+    "render_quality": "high"
+  },
+  "characters": {
+    "A": {
+      "name": "A",
+      "avatar": "A.jpg",
+      "avatar_size": [
+        130,
+        130
+      ],
+      "avatar_border": "circle",
+      "bubble_color": "#ffffff",
+      "bubble_shadow": "soft",
+      "bubble_border_radius": 18,
+      "text_color": "#000000",
+      "text_font": "PingFangSC-Regular",
+      "text_font_size": 32,
+      "side": "left",
+      "position": {
+        "x": 50,
+        "y": 50
+      }
+    },
+    "B": {
+      "name": "B",
+      "avatar": "B.jpg",
+      "avatar_size": [
+        130,
+        130
+      ],
+      "avatar_border": "circle",
+      "bubble_color": "#95EC69",
+      "bubble_shadow": "soft",
+      "bubble_border_radius": 18,
+      "text_color": "#000000",
+      "text_font": "PingFangSC-Regular",
+      "text_font_size": 32,
+      "side": "right",
+      "position": {
+        "x": 50,
+        "y": 50
+      }
+    }
+  },
+  "tracks": [
+    {
+      "type": "video",
+      "segments": [
+        {
+          "startTime": 0.0,
+          "endTime": 35.683,
+          "material": "",
+          "opacity": 1.0
+        }
+      ]
+    },
+    {
+      "type": "audio",
+      "segments": [
+        {
+          "startTime": 0.0,
+          "endTime": 35.683,
+          "material": "D:\\obsidian\\wzk-skills\\gospel-video\\samples\\ab_demo_boss_dev\\voice.mp3",
+          "volume": 1.0,
+          "fade_in": 0.0,
+          "fade_out": 0.0,
+          "_raw_material": "voice.mp3"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "segments": [
+        {
+          "startTime": 0.86,
+          "endTime": 6.1,
+          "material": "这个按钮改红色。",
+          "speaker": "A",
+          "style": {
+            "font": "PingFangSC-Regular",
+            "size": 5.0,
+            "color": "#000000",
+            "align": "left",
+            "line_height": 1.25
+          },
+          "animation": {
+            "type": "fade_in",
+            "duration": 0.3,
+            "easing": "ease-out",
+            "delay": 0
+          },
+          "position": {
+            "x": 50,
+            "y": 50,
+            "anchor": "left"
+          }
+        },
+        {
+          "startTime": 6.1,
+          "endTime": 8.8,
+          "material": "不改，设计稿是蓝色。",
+          "speaker": "B",
+          "style": {
+            "font": "PingFangSC-Regular",
+            "size": 5.0,
+            "color": "#000000",
+            "align": "left",
+            "line_height": 1.25
+          },
+          "animation": {
+            "type": "slide_in_left",
+            "duration": 0.3,
+            "easing": "ease-out",
+            "delay": 0
+          },
+          "position": {
+            "x": 50,
+            "y": 50,
+            "anchor": "right"
+          }
+        },
+        {
+          "startTime": 8.8,
+          "endTime": 10.7,
+          "material": "我说了算，改。",
+          "speaker": "A",
+          "style": {
+            "font": "PingFangSC-Regular",
+            "size": 5.0,
+            "color": "#000000",
+            "align": "left",
+            "line_height": 1.25
+          },
+          "animation": {
+            "type": "fade_in",
+            "duration": 0.3,
+            "easing": "ease-out",
+            "delay": 0
+          },
+          "position": {
+            "x": 50,
+            "y": 50,
+            "anchor": "left"
+          }
+        },
+        {
+          "startTime": 10.7,
+          "endTime": 12.96,
+          "material": "你说了算，但我不干。",
+          "speaker": "B",
+          "style": {
+            "font": "PingFangSC-Regular",
+            "size": 5.0,
+            "color": "#000000",
+            "align": "left",
+            "line_height": 1.25
+          },
+          "animation": {
+            "type": "slide_in_left",
+            "duration": 0.3,
+            "easing": "ease-out",
+            "delay": 0
+          },
+          "position": {
+            "x": 50,
+            "y": 50,
+            "anchor": "right"
+          }
+        },
+        {
+          "startTime": 12.96,
+          "endTime": 16.84,
+          "material": "你说了算，但我不干。",
+          "speaker": "B",
+          "style": {
+            "font": "PingFangSC-Regular",
+            "size": 5.0,
+            "color": "#000000",
+            "align": "left",
+            "line_height": 1.25
+          },
+          "animation": {
+            "type": "fade_in",
+            "duration": 0.3,
+            "easing": "ease-out",
+            "delay": 0
+          },
+          "position": {
+            "x": 50,
+            "y": 50,
+            "anchor": "right"
+          }
+        },
+        {
+          "startTime": 16.84,
+          "endTime": 18.18,
+          "material": "扣你绩效！",
+          "speaker": "A",
+          "style": {
+            "font": "PingFangSC-Regular",
+            "size": 5.0,
+            "color": "#000000",
+            "align": "left",
+            "line_height": 1.25
+          },
+          "animation": {
+            "type": "slide_in_right",
+            "duration": 0.3,
+            "easing": "ease-out",
+            "delay": 0
+          },
+          "position": {
+            "x": 50,
+            "y": 50,
+            "anchor": "left"
+          }
+        },
+        {
+          "startTime": 18.18,
+          "endTime": 21.96,
+          "material": "扣吧，反正也没多少。",
+          "speaker": "B",
+          "style": {
+            "font": "PingFangSC-Regular",
+            "size": 5.0,
+            "color": "#000000",
+            "align": "left",
+            "line_height": 1.25
+          },
+          "animation": {
+            "type": "fade_in",
+            "duration": 0.3,
+            "easing": "ease-out",
+            "delay": 0
+          },
+          "position": {
+            "x": 50,
+            "y": 50,
+            "anchor": "right"
+          }
+        },
+        {
+          "startTime": 21.96,
+          "endTime": 24.36,
+          "material": "……那蓝色就蓝色吧。",
+          "speaker": "A",
+          "style": {
+            "font": "PingFangSC-Regular",
+            "size": 5.0,
+            "color": "#000000",
+            "align": "left",
+            "line_height": 1.25
+          },
+          "animation": {
+            "type": "slide_in_right",
+            "duration": 0.3,
+            "easing": "ease-out",
+            "delay": 0
+          },
+          "position": {
+            "x": 50,
+            "y": 50,
+            "anchor": "left"
+          }
+        },
+        {
+          "startTime": 24.36,
+          "endTime": 26.06,
+          "material": "早这样多好，非要吵。",
+          "speaker": "B",
+          "style": {
+            "font": "PingFangSC-Regular",
+            "size": 5.0,
+            "color": "#000000",
+            "align": "left",
+            "line_height": 1.25
+          },
+          "animation": {
+            "type": "fade_in",
+            "duration": 0.3,
+            "easing": "ease-out",
+            "delay": 0
+          },
+          "position": {
+            "x": 50,
+            "y": 50,
+            "anchor": "right"
+          }
+        },
+        {
+          "startTime": 26.06,
+          "endTime": 27.04,
+          "material": "……那蓝色就蓝色吧。",
+          "speaker": "A",
+          "style": {
+            "font": "PingFangSC-Regular",
+            "size": 5.0,
+            "color": "#000000",
+            "align": "left",
+            "line_height": 1.25
+          },
+          "animation": {
+            "type": "slide_in_right",
+            "duration": 0.3,
+            "easing": "ease-out",
+            "delay": 0
+          },
+          "position": {
+            "x": 50,
+            "y": 50,
+            "anchor": "left"
+          }
+        },
+        {
+          "startTime": 27.04,
+          "endTime": 30.46,
+          "material": "早这样多好，非要吵。",
+          "speaker": "B",
+          "style": {
+            "font": "PingFangSC-Regular",
+            "size": 5.0,
+            "color": "#000000",
+            "align": "left",
+            "line_height": 1.25
+          },
+          "animation": {
+            "type": "fade_in",
+            "duration": 0.3,
+            "easing": "ease-out",
+            "delay": 0
+          },
+          "position": {
+            "x": 50,
+            "y": 50,
+            "anchor": "right"
+          }
+        },
+        {
+          "startTime": 30.46,
+          "endTime": 35.683,
+          "material": "职场如戏，全靠演技。",
+          "speaker": "B",
+          "style": {
+            "font": "PingFangSC-Regular",
+            "size": 5.0,
+            "color": "#000000",
+            "align": "left",
+            "line_height": 1.25
+          },
+          "animation": {
+            "type": "slide_in_left",
+            "duration": 0.3,
+            "easing": "ease-out",
+            "delay": 0
+          },
+          "position": {
+            "x": 50,
+            "y": 50,
+            "anchor": "right"
+          }
+        }
+      ]
+    },
+    {
+      "type": "sticker",
+      "segments": [
+        {
+          "startTime": 0.86,
+          "endTime": 6.1,
+          "material": "你给我老实点.png",
+          "speaker": "A",
+          "scale": 0.7111,
+          "position": {
+            "x": "50",
+            "y": "25.0",
+            "anchor": "center"
+          },
+          "hint": "建议：根据「这个按钮改红色。」语义为主agent挑选 emoji 贴纸（写入 sticker 轨 material 文件名）",
+          "_raw_material": "你给我老实点.png"
+        },
+        {
+          "startTime": 6.1,
+          "endTime": 8.8,
+          "material": "你清醒一点.jpg",
+          "speaker": "B",
+          "scale": 0.7111,
+          "position": {
+            "x": "50",
+            "y": "25.0",
+            "anchor": "center"
+          },
+          "hint": "建议：根据「不改，设计稿是蓝色。」语义为主agent挑选 emoji 贴纸（写入 sticker 轨 material 文件名）",
+          "_raw_material": "你清醒一点.jpg"
+        },
+        {
+          "startTime": 8.8,
+          "endTime": 10.7,
+          "material": "你算哪根葱.jpg",
+          "speaker": "A",
+          "scale": 0.7556,
+          "position": {
+            "x": "50",
+            "y": "25.0",
+            "anchor": "center"
+          },
+          "hint": "建议：根据「我说了算，改。」语义为主agent挑选 emoji 贴纸（写入 sticker 轨 material 文件名）",
+          "_raw_material": "你算哪根葱.jpg"
+        },
+        {
+          "startTime": 10.7,
+          "endTime": 12.96,
+          "material": "别说了，我不想听.jpg",
+          "speaker": "B",
+          "scale": 0.749,
+          "position": {
+            "x": "50",
+            "y": "25.0",
+            "anchor": "center"
+          },
+          "hint": "建议：根据「你说了算，但我不干。」语义为主agent挑选 emoji 贴纸（写入 sticker 轨 material 文件名）",
+          "_raw_material": "别说了，我不想听.jpg"
+        },
+        {
+          "startTime": 12.96,
+          "endTime": 16.84,
+          "material": "别说了，我不想听.jpg",
+          "speaker": "B",
+          "scale": 0.749,
+          "position": {
+            "x": "50",
+            "y": "25.0",
+            "anchor": "center"
+          },
+          "hint": "建议：根据「你说了算，但我不干。」语义为主agent挑选 emoji 贴纸（写入 sticker 轨 material 文件名）",
+          "_raw_material": "别说了，我不想听.jpg"
+        },
+        {
+          "startTime": 16.84,
+          "endTime": 18.18,
+          "material": "angry_01.png",
+          "speaker": "A",
+          "scale": 0.7216,
+          "position": {
+            "x": "50",
+            "y": "25.0",
+            "anchor": "center"
+          },
+          "hint": "建议：根据「扣你绩效！」语义为主agent挑选 emoji 贴纸（写入 sticker 轨 material 文件名）",
+          "_raw_material": "angry_01.png"
+        },
+        {
+          "startTime": 18.18,
+          "endTime": 21.96,
+          "material": "可以，没问题.jpg",
+          "speaker": "B",
+          "scale": 0.7529,
+          "position": {
+            "x": "50",
+            "y": "25.0",
+            "anchor": "center"
+          },
+          "hint": "建议：根据「扣吧，反正也没多少。」语义为主agent挑选 emoji 贴纸（写入 sticker 轨 material 文件名）",
+          "_raw_material": "可以，没问题.jpg"
+        },
+        {
+          "startTime": 21.96,
+          "endTime": 24.36,
+          "material": "卑微.jpg",
+          "speaker": "A",
+          "scale": 0.5962,
+          "position": {
+            "x": "50",
+            "y": "25.0",
+            "anchor": "center"
+          },
+          "hint": "建议：根据「……那蓝色就蓝色吧。」语义为主agent挑选 emoji 贴纸（写入 sticker 轨 material 文件名）",
+          "_raw_material": "卑微.jpg"
+        },
+        {
+          "startTime": 24.36,
+          "endTime": 26.06,
+          "material": "你咋这么搞笑呢.webp",
+          "speaker": "B",
+          "scale": 0.7111,
+          "position": {
+            "x": "50",
+            "y": "25.0",
+            "anchor": "center"
+          },
+          "hint": "建议：根据「早这样多好，非要吵。」语义为主agent挑选 emoji 贴纸（写入 sticker 轨 material 文件名）",
+          "_raw_material": "你咋这么搞笑呢.webp"
+        },
+        {
+          "startTime": 26.06,
+          "endTime": 27.04,
+          "material": "卑微.jpg",
+          "speaker": "A",
+          "scale": 0.5962,
+          "position": {
+            "x": "50",
+            "y": "25.0",
+            "anchor": "center"
+          },
+          "hint": "建议：根据「……那蓝色就蓝色吧。」语义为主agent挑选 emoji 贴纸（写入 sticker 轨 material 文件名）",
+          "_raw_material": "卑微.jpg"
+        },
+        {
+          "startTime": 27.04,
+          "endTime": 30.46,
+          "material": "你咋这么搞笑呢.webp",
+          "speaker": "B",
+          "scale": 0.7111,
+          "position": {
+            "x": "50",
+            "y": "25.0",
+            "anchor": "center"
+          },
+          "hint": "建议：根据「早这样多好，非要吵。」语义为主agent挑选 emoji 贴纸（写入 sticker 轨 material 文件名）",
+          "_raw_material": "你咋这么搞笑呢.webp"
+        },
+        {
+          "startTime": 30.46,
+          "endTime": 35.683,
+          "material": "你真的特别优秀.gif",
+          "speaker": "B",
+          "scale": 0.7111,
+          "position": {
+            "x": "50",
+            "y": "25.0",
+            "anchor": "center"
+          },
+          "hint": "建议：根据「职场如戏，全靠演技。」语义为主agent挑选 emoji 贴纸（写入 sticker 轨 material 文件名）",
+          "_raw_material": "你真的特别优秀.gif"
+        }
+      ]
+    },
+    {
+      "type": "audio",
+      "segments": [
+        {
+          "startTime": 0.86,
+          "endTime": 2.36,
+          "material": "",
+          "speaker": "A",
+          "volume": 0.5,
+          "hint": "建议：为「这个按钮改红色。」配置对应情绪音效（写入音效轨 material 文件名）"
+        },
+        {
+          "startTime": 6.1,
+          "endTime": 7.6,
+          "material": "",
+          "speaker": "B",
+          "volume": 0.5,
+          "hint": "建议：为「不改，设计稿是蓝色。」配置对应情绪音效（写入音效轨 material 文件名）"
+        },
+        {
+          "startTime": 8.8,
+          "endTime": 10.3,
+          "material": "D:\\obsidian\\wzk-skills\\gospel-video\\assets\\sfx\\哇_惊叹.mp3",
+          "speaker": "A",
+          "volume": 0.5,
+          "hint": "建议：为「我说了算，改。」配置对应情绪音效（写入音效轨 material 文件名）",
+          "_raw_material": "哇_惊叹.mp3"
+        },
+        {
+          "startTime": 10.7,
+          "endTime": 12.2,
+          "material": "",
+          "speaker": "B",
+          "volume": 0.5,
+          "hint": "建议：为「你说了算，但我不干。」配置对应情绪音效（写入音效轨 material 文件名）"
+        },
+        {
+          "startTime": 12.96,
+          "endTime": 14.46,
+          "material": "",
+          "speaker": "B",
+          "volume": 0.5,
+          "hint": "建议：为「你说了算，但我不干。」配置对应情绪音效（写入音效轨 material 文件名）"
+        },
+        {
+          "startTime": 16.84,
+          "endTime": 18.34,
+          "material": "D:\\obsidian\\wzk-skills\\gospel-video\\assets\\sfx\\卧槽_震惊.mp3",
+          "speaker": "A",
+          "volume": 0.5,
+          "hint": "建议：为「扣你绩效！」配置对应情绪音效（写入音效轨 material 文件名）",
+          "_raw_material": "卧槽_震惊.mp3"
+        },
+        {
+          "startTime": 18.18,
+          "endTime": 19.68,
+          "material": "",
+          "speaker": "B",
+          "volume": 0.5,
+          "hint": "建议：为「扣吧，反正也没多少。」配置对应情绪音效（写入音效轨 material 文件名）"
+        },
+        {
+          "startTime": 21.96,
+          "endTime": 23.46,
+          "material": "",
+          "speaker": "A",
+          "volume": 0.5,
+          "hint": "建议：为「……那蓝色就蓝色吧。」配置对应情绪音效（写入音效轨 material 文件名）"
+        },
+        {
+          "startTime": 24.36,
+          "endTime": 25.86,
+          "material": "D:\\obsidian\\wzk-skills\\gospel-video\\assets\\sfx\\哈哈_大笑.mp3",
+          "speaker": "B",
+          "volume": 0.5,
+          "hint": "建议：为「早这样多好，非要吵。」配置对应情绪音效（写入音效轨 material 文件名）",
+          "_raw_material": "哈哈_大笑.mp3"
+        },
+        {
+          "startTime": 26.06,
+          "endTime": 27.56,
+          "material": "",
+          "speaker": "A",
+          "volume": 0.5,
+          "hint": "建议：为「……那蓝色就蓝色吧。」配置对应情绪音效（写入音效轨 material 文件名）"
+        },
+        {
+          "startTime": 27.04,
+          "endTime": 28.54,
+          "material": "D:\\obsidian\\wzk-skills\\gospel-video\\assets\\sfx\\哈哈_大笑.mp3",
+          "speaker": "B",
+          "volume": 0.5,
+          "hint": "建议：为「早这样多好，非要吵。」配置对应情绪音效（写入音效轨 material 文件名）",
+          "_raw_material": "哈哈_大笑.mp3"
+        },
+        {
+          "startTime": 30.46,
+          "endTime": 31.96,
+          "material": "D:\\obsidian\\wzk-skills\\gospel-video\\assets\\sfx\\哈哈_大笑.mp3",
+          "speaker": "B",
+          "volume": 0.5,
+          "hint": "建议：为「职场如戏，全靠演技。」配置对应情绪音效（写入音效轨 material 文件名）",
+          "_raw_material": "哈哈_大笑.mp3"
+        }
+      ]
+    },
+    {
+      "type": "effect",
+      "segments": [
+        {
+          "startTime": 0.86,
+          "endTime": 3.36,
+          "material": "预警",
+          "speaker": "A",
+          "hint": "建议：为「这个按钮改红色。」配置剪映内置画面特效（写入 effect 轨 material 标识符）"
+        },
+        {
+          "startTime": 6.1,
+          "endTime": 8.6,
+          "material": "",
+          "speaker": "B",
+          "hint": "建议：为「不改，设计稿是蓝色。」配置剪映内置画面特效（写入 effect 轨 material 标识符）"
+        },
+        {
+          "startTime": 8.8,
+          "endTime": 10.7,
+          "material": "预警",
+          "speaker": "A",
+          "hint": "建议：为「我说了算，改。」配置剪映内置画面特效（写入 effect 轨 material 标识符）"
+        },
+        {
+          "startTime": 10.7,
+          "endTime": 12.96,
+          "material": "哈哈弹幕",
+          "speaker": "B",
+          "hint": "建议：为「你说了算，但我不干。」配置剪映内置画面特效（写入 effect 轨 material 标识符）"
+        },
+        {
+          "startTime": 12.96,
+          "endTime": 15.46,
+          "material": "哈哈弹幕",
+          "speaker": "B",
+          "hint": "建议：为「你说了算，但我不干。」配置剪映内置画面特效（写入 effect 轨 material 标识符）"
+        },
+        {
+          "startTime": 16.84,
+          "endTime": 18.18,
+          "material": "裂开了",
+          "speaker": "A",
+          "hint": "建议：为「扣你绩效！」配置剪映内置画面特效（写入 effect 轨 material 标识符）"
+        },
+        {
+          "startTime": 18.18,
+          "endTime": 20.68,
+          "material": "凄凉",
+          "speaker": "B",
+          "hint": "建议：为「扣吧，反正也没多少。」配置剪映内置画面特效（写入 effect 轨 material 标识符）"
+        },
+        {
+          "startTime": 21.96,
+          "endTime": 24.36,
+          "material": "凄凉",
+          "speaker": "A",
+          "hint": "建议：为「……那蓝色就蓝色吧。」配置剪映内置画面特效（写入 effect 轨 material 标识符）"
+        },
+        {
+          "startTime": 24.36,
+          "endTime": 26.06,
+          "material": "哈哈弹幕",
+          "speaker": "B",
+          "hint": "建议：为「早这样多好，非要吵。」配置剪映内置画面特效（写入 effect 轨 material 标识符）"
+        },
+        {
+          "startTime": 26.06,
+          "endTime": 27.04,
+          "material": "凄凉",
+          "speaker": "A",
+          "hint": "建议：为「……那蓝色就蓝色吧。」配置剪映内置画面特效（写入 effect 轨 material 标识符）"
+        },
+        {
+          "startTime": 27.04,
+          "endTime": 29.54,
+          "material": "哈哈弹幕",
+          "speaker": "B",
+          "hint": "建议：为「早这样多好，非要吵。」配置剪映内置画面特效（写入 effect 轨 material 标识符）"
+        },
+        {
+          "startTime": 30.46,
+          "endTime": 32.96,
+          "material": "冲刺",
+          "speaker": "B",
+          "hint": "建议：为「职场如戏，全靠演技。」配置剪映内置画面特效（写入 effect 轨 material 标识符）"
+        }
+      ]
+    }
+  ],
+  "transitions": [
+    {
+      "type": "dissolve",
+      "duration": 0.3,
+      "easing": "ease-in-out"
+    }
+  ]
+}

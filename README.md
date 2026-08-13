@@ -12,6 +12,12 @@
 - 🎬 **输出即剪映草稿**：生成到剪映默认草稿目录，打开剪映即可编辑/导出；无需其他工具链。
 - 🏷️ **重录/反复唱词**：歌曲中整句/句尾的重复演唱，自动识别为独立出现并重新弹出气泡（卡拉OK式），画面不中断。
 
+## 效果预览
+
+下方为剪映专业版草稿编辑器截图（`samples/ab_demo_boss_dev/`，9 句老板/主角职场对话，12 段卡拉OK式时间轴：第3句句尾重唱、第6/7句整句重录重新弹出）。
+
+![剪映草稿效果预览](docs/images/ab_demo_preview.png)
+
 ## 环境要求
 
 | 依赖 | 说明 |
@@ -23,37 +29,38 @@
 
 ## 快速开始
 
+仓库自带一个可跑通的完整示例（`samples/ab_demo_boss_dev/`，含对话剧本 + 配音 + 完整 plan），clone 后可以直接试：
+
 ```bash
 # 1. 克隆 + 安装依赖
-git clone <your-repo-url> gospel-video
+git clone https://github.com/newued/gospel-video
 cd gospel-video
 pip install -r requirements.txt
+# 首次运行会自动下载 faster-whisper small 模型（约 460MB，需联网一次）
 
-# 2. 准备输入：AB 对话剧本 + 已配音音频
-cat > dialog.json <<'EOF'
-[
-  {"role": "A", "content": "大师，最近生意很不好，有什么方法可以改变吗？"},
-  {"role": "B", "content": "问你一个问题"},
-  {"role": "B", "content": "现在有两只鬼要吃掉你"},
-  {"role": "A", "content": "先射绿鬼一箭，谁不听话最后那一箭射谁！"},
-  {"role": "B", "content": "贫道佩服！"}
-]
-EOF
+# 2a. 最快试一下：plan 模式（已含素材决策，直接出完整效果）
+python scripts/ab_generator.py --plan-json samples/ab_demo_boss_dev/plan.json
+# → 打开剪映 → 草稿箱 → 找到 ab_dialog_<时间戳> 即可编辑
 
-# 3. 一键生成剪映草稿（自动 ASR 对齐）
-python scripts/ab_generator.py --dialog-json dialog.json --audio-mp3 voice.mp3
-
-# 4. 打开剪映 → 草稿箱 → 找到 ab_dialog_<时间戳> 即可编辑
+# 2b. 体验完整流程：auto 模式（ASR 对齐）→ 导出 plan → plan 模式
+python scripts/ab_generator.py \
+    --dialog-json samples/ab_demo_boss_dev/dialog.json \
+    --audio-mp3  samples/ab_demo_boss_dev/voice.mp3 \
+    --output-draft out/ --export-plan plan.json
+# 然后在 plan.json 的 sticker/effect/audio 轨填素材决策（详见下方"两种用法"），再：
+python scripts/ab_generator.py --plan-json plan.json
 ```
 
-> 角色名支持中文自动映射：剧本中**先出现的角色 → A（左/白/对方）**，后出现的 → **B（右/绿/自己）**。
+> 角色名支持中文自动映射：剧本中**先出现的角色 → A（左/白/对方）**，后出现的 → **B（右/绿/自己）**。`samples/ab_demo_boss_dev/dialog.json` 演示了中文映射（老板/主角）。
 
 ## AB 双人对话模式：两种用法
 
 ### 用法一：自动模式（推荐，配音 + 剧本 → 草稿）
 
 ```bash
-python scripts/ab_generator.py --dialog-json dialog.json --audio-mp3 voice.mp3 \
+python scripts/ab_generator.py \
+    --dialog-json samples/ab_demo_boss_dev/dialog.json \
+    --audio-mp3  samples/ab_demo_boss_dev/voice.mp3 \
     --output-draft out/ \
     --export-plan plan.json        # 可选：同时导出中间 plan 供你审查/改素材
 ```
@@ -66,14 +73,17 @@ python scripts/ab_generator.py --dialog-json dialog.json --audio-mp3 voice.mp3 \
 
 ```bash
 # 1) 先跑自动模式导出 plan（或手写中间 JSON）
-python scripts/ab_generator.py --dialog-json dialog.json --audio-mp3 voice.mp3 --export-plan plan.json
+python scripts/ab_generator.py \
+    --dialog-json samples/ab_demo_boss_dev/dialog.json \
+    --audio-mp3  samples/ab_demo_boss_dev/voice.mp3 \
+    --export-plan plan.json
 # 2) 你审查 plan.json，在 sticker / effect / audio(音效) 轨的 material 字段填素材
 #    （贴纸填 assets/emojis 下的文件名；特效用剪映内置名如"预警/裂开了/哈哈弹幕"；音效填 assets/sfx 下的文件名）
 # 3) 重新生成（秒出，不重跑 ASR）
 python scripts/ab_generator.py --plan-json plan.json
 ```
 
-中间 JSON schema 详见 [docs/AB_DIALOG_GUIDE.md](docs/AB_DIALOG_GUIDE.md)。
+`samples/ab_demo_boss_dev/plan.json` 是一份**已填好素材决策**的完整示例，可直接走用法二跳过第 2 步。中间 JSON schema 详见 [docs/AB_DIALOG_GUIDE.md](docs/AB_DIALOG_GUIDE.md)。
 
 ## 完整流水线（可选，需搭配 jianying-editor）
 
@@ -104,8 +114,14 @@ gospel-video/
 │   ├── emojis/               # 表情贴图素材库（见下方版权声明）
 │   ├── sfx/                  # 音效素材
 │   └── emoji_scenes.json     # 表情语义索引（tags + 情绪）
-├── samples/                  # 示例剧本
-└── docs/                     # 使用/架构/工作流文档
+├── samples/                  # 示例剧本+音频（clone 即可试）
+│   ├── ab_demo_boss_dev/     # 9 句职场对话完整示例（auto+plan 两种模式可直接跑）
+│   ├── demo_apology.json     # 道歉对话剧本
+│   ├── emperor_wisdom.json    # 帝王之术剧本（含旁白+音色建议）
+│   └── emperor_wisdom.txt    # 同上，纯文本
+├── docs/                     # 使用/架构/工作流文档
+│   └── images/               # README 引用的预览图
+└── vendor/
 ```
 
 ## 素材与版权声明
